@@ -1,0 +1,23 @@
+{
+    "name": "Canvas Grades Extension",
+    "description": "An extension that lets you see your grades on the home page of canvas",
+    "version": "1.0.0.1",
+    "manifest_version": 2,
+    "content_scripts":
+	[{
+      "matches": ["https://*/"],
+      "js": ["ShowGrades.js"]
+    }],
+    "icons":
+	{
+		"128": "canvas_logo.png",
+		"48": "canvas_logo.png",
+		"16": "canvas_logo.png"
+	},
+    "browser_action":
+	{
+		"default_icon": "canvas_logo.png",
+		"default_popup": "popup.html",
+		"default_title": "Canvas Grades Extension"
+	}
+}
