@@ -1,7 +1,7 @@
 {
     "name": "Canvas Grades Extension",
     "description": "An extension that lets you see your grades on the home page of canvas",
-    "version": "1.0.0.1",
+    "version": "1.0.0.2",
     "manifest_version": 2,
     "content_scripts":
 	[{
