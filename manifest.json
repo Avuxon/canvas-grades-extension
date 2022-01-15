@@ -10,13 +10,13 @@
     }],
     "icons":
 	{
-		"128": "canvas_logo.png",
-		"48": "canvas_logo.png",
-		"16": "canvas_logo.png"
+		"128": "canvas_logo_alt.png",
+		"48": "canvas_logo_alt.png",
+		"16": "canvas_logo_alt.png"
 	},
     "browser_action":
 	{
-		"default_icon": "canvas_logo.png",
+		"default_icon": "canvas_logo_alt.png",
 		"default_popup": "popup.html",
 		"default_title": "Canvas Grades Extension"
 	}
