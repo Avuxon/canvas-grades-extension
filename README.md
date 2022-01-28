@@ -1,4 +1,4 @@
-# canvas-grades-extension
+# Canvas Grades Chrome Extension
 This chrome extension showcase's students' grades on their Canvas Dashboard.
 
 Extension being used:
