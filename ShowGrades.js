@@ -4,6 +4,7 @@ var url = window.location.href;
 //check if url is a valid canvas url, if so, start to get grades and load new table
 if (/^https:\/\/canvas\.([^()]+)\.edu\/$/.test(url) || /^https:\/\/([^()]+)\.instructure\.com\/$/.test(url)) {
     Promise.all([
+        // get color of classes here
             fetch('/api/v1/users/self/colors', {
                 method: 'GET',
                 credentials: 'include',
@@ -11,7 +12,7 @@ if (/^https:\/\/canvas\.([^()]+)\.edu\/$/.test(url) || /^https:\/\/([^()]+)\.ins
                     "Accept": "application/json+canvas-string-ids"
                 }
             })
-            .then(res => res.json()),
+            .then(res => res.json()), 
             fetch('/api/v1/users/self/favorites/courses?include[]=total_scores&include[]=favorites', {
                 method: 'GET',
                 credentials: 'include',
